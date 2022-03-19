@@ -24,6 +24,7 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -529,6 +530,7 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/creation.html">Creation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/asarray.html">asarray</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/zeros.html">zeros</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/ones.html">ones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/full_like.html">full_like</a></li>
@@ -536,12 +538,20 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/tril.html">tril</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/triu.html">triu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/empty.html">empty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/empty_like.html">empty_like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/linspace.html">linspace</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/array.html">array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/creation/logspace.html">logspace</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/data_type.html">Data type</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/iinfo.html">iinfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/finfo.html">finfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/dtype.html">dtype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/dtype_bits.html">dtype_bits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/dtype_to_str.html">dtype_to_str</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/is_int_dtype.html">is_int_dtype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/data_type/is_float_dtype.html">is_float_dtype</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/device.html">Device</a><ul>
@@ -594,9 +604,12 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/elementwise.html">Elementwise</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/bitwise_invert.html">bitwise_invert</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/bitwise_and.html">bitwise_and</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/ceil.html">ceil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/floor.html">floor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/isfinite.html">isfinite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/asin.html">asin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/isinf.html">isinf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/less_equal.html">less_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/asinh.html">asinh</a></li>
@@ -609,20 +622,35 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/less.html">less</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/cos.html">cos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/logical_not.html">logical_not</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/acos.html">acos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/logical_or.html">logical_or</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/logical_and.html">logical_and</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/acosh.html">acosh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/sin.html">sin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/negative.html">negative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/not_equal.html">not_equal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/tanh.html">tanh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/bitwise_or.html">bitwise_or</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/sinh.html">sinh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/positive.html">positive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/square.html">square</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/elementwise/round.html">round</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/general.html">General</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/get_referrers_recursive.html">get_referrers_recursive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/is_array.html">is_array</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/copy_array.html">copy_array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/array_equal.html">array_equal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/arrays_equal.html">arrays_equal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/all_equal.html">all_equal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/to_numpy.html">to_numpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/to_scalar.html">to_scalar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/to_list.html">to_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/clip_vector_norm.html">clip_vector_norm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/clip_matrix_norm.html">clip_matrix_norm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/floormod.html">floormod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/general/unstack.html">unstack</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/gradients.html">Gradients</a><ul>
@@ -667,14 +695,20 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/linear_algebra.html">Linear algebra</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/matrix_transpose.html">matrix_transpose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/vector_norm.html">vector_norm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/svd.html">svd</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/diagonal.html">diagonal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/inv.html">inv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/pinv.html">pinv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/cholesky.html">cholesky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/matrix_norm.html">matrix_norm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/qr.html">qr</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/matmul.html">matmul</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/slodget.html">slodget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/svdvals.html">svdvals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/trace.html">trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/linear_algebra/vector_to_skew_symmetric_matrix.html">vector_to_skew_symmetric_matrix</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/losses.html">Losses</a><ul>
@@ -686,6 +720,9 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/manipulation.html">Manipulation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/manipulation/flip.html">flip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/manipulation/expand_dims.html">expand_dims</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/manipulation/split.html">split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/manipulation/repeat.html">repeat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/manipulation/tile.html">tile</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/meta.html">Meta</a><ul>
@@ -736,6 +773,7 @@ and the best coding practices to get the most out of Ivy for your own codebases 
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/statistical/min.html">min</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/statistical/max.html">max</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functional/ivy/statistical/prod.html">prod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional/ivy/statistical/sum.html">sum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/utility.html">Utility</a><ul>

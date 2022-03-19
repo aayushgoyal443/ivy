@@ -12,9 +12,12 @@ Elementwise
    :maxdepth: -1
    :caption: Elementwise
 
+   elementwise/bitwise_invert.rst
    elementwise/bitwise_and.rst
    elementwise/ceil.rst
+   elementwise/floor.rst
    elementwise/isfinite.rst
+   elementwise/asin.rst
    elementwise/isinf.rst
    elementwise/less_equal.rst
    elementwise/asinh.rst
@@ -27,12 +30,17 @@ Elementwise
    elementwise/less.rst
    elementwise/cos.rst
    elementwise/logical_not.rst
+   elementwise/acos.rst
    elementwise/logical_or.rst
    elementwise/logical_and.rst
    elementwise/acosh.rst
    elementwise/sin.rst
    elementwise/negative.rst
+   elementwise/not_equal.rst
    elementwise/tanh.rst
+   elementwise/bitwise_or.rst
    elementwise/sinh.rst
+   elementwise/positive.rst
    elementwise/square.rst
+   elementwise/round.rst
 
