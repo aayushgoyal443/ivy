@@ -41,7 +41,6 @@ Elementwise
    elementwise/not_equal.rst
    elementwise/tanh.rst
    elementwise/bitwise_or.rst
-   elementwise/bitwise_xor.rst
    elementwise/sinh.rst
    elementwise/positive.rst
    elementwise/square.rst
