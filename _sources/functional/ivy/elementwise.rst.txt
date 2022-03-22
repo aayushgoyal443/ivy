@@ -19,6 +19,7 @@ Elementwise
    elementwise/isfinite.rst
    elementwise/asin.rst
    elementwise/isinf.rst
+   elementwise/greater_equal.rst
    elementwise/less_equal.rst
    elementwise/asinh.rst
    elementwise/sqrt.rst
@@ -42,5 +43,18 @@ Elementwise
    elementwise/sinh.rst
    elementwise/positive.rst
    elementwise/square.rst
+   elementwise/logaddexp.rst
    elementwise/round.rst
+   elementwise/abs.rst
+   elementwise/tan.rst
+   elementwise/asin.rst
+   elementwise/atan.rst
+   elementwise/atan2.rst
+   elementwise/cosh.rst
+   elementwise/tanh.rst
+   elementwise/atanh.rst
+   elementwise/log.rst
+   elementwise/exp.rst
+   elementwise/divide.rst
+   elementwise/erf.rst
 
