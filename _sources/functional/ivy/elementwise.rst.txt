@@ -25,7 +25,6 @@ Elementwise
    elementwise/asinh.rst
    elementwise/sqrt.rst
    elementwise/cosh.rst
-   elementwise/log.rst
    elementwise/log2.rst
    elementwise/log10.rst
    elementwise/log1p.rst
